@@ -1,0 +1,62 @@
+# =========================================
+# .gitignore para proyectos SQL / MySQL
+# =========================================
+
+# --- Archivos de datos y logs de MySQL ---
+*.ibd
+*.frm
+*.myd
+*.myi
+*.ibdata*
+ib_logfile*
+*.err
+*.pid
+*.sock
+mysql-bin.*
+*.log
+*.slow
+
+# --- Respaldos y volcados (pueden contener datos sensibles) ---
+*.bak
+*.backup
+*.dump
+*.sql.gz
+*.sql.zip
+backups/
+dumps/
+
+# --- Bases de datos locales ---
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# --- Credenciales y configuración local ---
+.env
+.env.*
+*.cnf
+my.ini
+credenciales*.txt
+secrets/
+
+# --- MySQL Workbench ---
+*.mwb.bak
+*.mwb.beforefix
+.mysql_history
+
+# --- Editores / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Temporales de Office (documento técnico) ---
+~$*.docx
+~$*.doc
